@@ -10,11 +10,8 @@ import NotFound from './NotFound';
 import Introduction from './Introduction';
 import Docs from "./Docs"
 
-// add dashboard for admin to update test and users
-// need at least 100 question and maybe the backend should pick random 20 questions. 
 
 function App() {
-  // const [examID, setExamID] = useState(null)
 
   return (
     <div className="App">
