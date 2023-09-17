@@ -16,7 +16,7 @@ const ExamListCard = ({ exam }) => {
 
     useEffect(() => {
         async function getTopTen(id) {
-            const { topTen: leaders } = await StellarApi.getTopTen(id)
+            const { top_ten: leaders } = await StellarApi.getTopTen(id)
             setTopTen(leaders)
         }
         if (modal) {
@@ -40,7 +40,7 @@ const ExamListCard = ({ exam }) => {
                         className="mb-2 text-muted"
                         tag="h6"
                     >
-                        Grade Levle: {exam.grade_level}
+                        Grade Level: {exam.grade_level}
                     </CardSubtitle>
                     <CardText>
                         {exam.description}
@@ -107,11 +107,13 @@ const ExamListCard = ({ exam }) => {
             <ModalHeader toggle={toggle2}>{exam.title}</ModalHeader>
             <ModalBody>
                 You are about to take the "{exam.title}" exam.
+                <br></br>
                 The exam is timed and calculated with your score.
+                <br></br>
                 But feel free to take all the time you need.
-                You will recive your score after you submit the exam.
-                If your score is in the top ten for {exam.title}, you will have the opertunity to
-                submit a username of your choice to recored your score. If you choose not to recored your score
+                You will receive your score after you submit the exam.
+                If your score is in the top ten for {exam.title}, you will have the opportunity to
+                submit a username of your choice to record your score. If you choose not to record your score
                 simply hit exit after viewing your score.
                 Good Luck!
             </ModalBody>

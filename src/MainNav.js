@@ -4,8 +4,8 @@ import { Nav, NavItem } from 'reactstrap';
 
 const MainNav = () => {
     return (
-        <Nav className="ms-3 me-3 mt-2" tabs >
-            <NavLink className={"navbar-brand me-4 mt-2"} to="/exams">
+        <Nav className="sticky-top ms-3 me-3 mt-2 bg-light" tabs >
+            <NavLink className={"navbar-brand me-4 mt-2"} to="/">
                 STELLAR
             </NavLink>
             <NavItem>
@@ -16,6 +16,11 @@ const MainNav = () => {
             <NavItem>
                 <NavLink className={"nav-link"} to="/leaderboard">
                     Leaderboards
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink className={"nav-link"} to="/docs">
+                    Docs
                 </NavLink>
             </NavItem>
         </Nav>

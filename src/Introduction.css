@@ -1,0 +1,19 @@
+.intro-row {
+    height: 20rem;
+}
+
+.intro-col {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.intro-img {
+    border-radius: 5%;
+    height: 20rem;
+    width: 18rem;
+
+}
