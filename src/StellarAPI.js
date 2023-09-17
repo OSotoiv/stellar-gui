@@ -1,5 +1,7 @@
 import axios from "axios";
 const BASE_API_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001" : "https://stellar-api-4c4337d94ef4.herokuapp.com"
+const SECRET_USER = 'disabled';
+const PW_SECRET = 'disabled'
 
 class StellarApi {
     constructor() {
