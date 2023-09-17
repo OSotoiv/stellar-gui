@@ -15,7 +15,7 @@ const Introduction = () => {
                 </p>
             </Col>
             <Col className='col-6 intro-col' >
-                <img alt='of me' src={`${process.env.PUBLIC_URL}/images/me.JPG`} className='intro-img' />
+                {/* <img alt='of me' src={`${process.env.PUBLIC_URL}/images/me.JPG`} className='intro-img' /> */}
             </Col>
         </Row>
 
