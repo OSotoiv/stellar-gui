@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_API_URL, SECRET_USER, PW_SECRET } from './configs'
+const BASE_API_URL = process.env.NODE_ENV === "development" ? "http://localhost:3001" : "https://stellar-api-4c4337d94ef4.herokuapp.com"
 
 class StellarApi {
     constructor() {
@@ -25,20 +25,20 @@ class StellarApi {
         return data
     }
     static async addUserToLeaderboard(username, exam_score, exam_time, exam_id) {
-        const token = await StellarApi.getToken();
+        // const token = await StellarApi.getToken();
         const { data } = await axios.post(`${BASE_API_URL}/score`,
             { username, exam_score, exam_time, exam_id },
             {
                 headers: {
-                    Authorization: `Bearer ${token}`
+                    Authorization: `Bearer TOKEN`
                 }
             })
         return data
     }
     static async isTopTen(exam_id, exam_score, exam_time) {
-        const token = await StellarApi.getToken();
+        // const token = await StellarApi.getToken();
         const { data } = await axios.get(`${BASE_API_URL}/score/isTopTen/${exam_id}`,
-            { params: { exam_score, exam_time }, headers: { Authorization: `Bearer ${token}` } });
+            { params: { exam_score, exam_time }, headers: { Authorization: `Bearer TOKEN` } });
         return data.isTopTen
     }
     static async allLeaders() {
