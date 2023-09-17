@@ -7,7 +7,6 @@ const Introduction = () => {
         <Row className='intro-row' >
             <Col className='col-6 intro-col' >
                 <h1>Welcome to the Stellar API</h1>
-                {/* <image src="link-to-logo.png" alt="Stellar API Logo" fluid /> */}
                 <p className='text-start'>
                     A project meticulously crafted by yours truly,
                     using Node, Express, and PSQL.<br></br>
@@ -15,7 +14,7 @@ const Introduction = () => {
                 </p>
             </Col>
             <Col className='col-6 intro-col' >
-                {/* <img alt='of me' src={`${process.env.PUBLIC_URL}/images/me.JPG`} className='intro-img' /> */}
+                <img alt='of me' src={`${process.env.PUBLIC_URL}/images/me.JPG`} className='intro-img' />
             </Col>
         </Row>
 
