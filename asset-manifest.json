@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stellar-gui/static/css/main.e99256e8.css",
-    "main.js": "/stellar-gui/static/js/main.59590d4c.js",
+    "main.js": "/stellar-gui/static/js/main.a2a80972.js",
     "static/js/665.722ac00b.chunk.js": "/stellar-gui/static/js/665.722ac00b.chunk.js",
     "static/js/55.4ee8d312.chunk.js": "/stellar-gui/static/js/55.4ee8d312.chunk.js",
     "static/js/704.c5e18ab1.chunk.js": "/stellar-gui/static/js/704.c5e18ab1.chunk.js",
@@ -15,11 +15,11 @@
     "static/media/score_topTen_id.md": "/stellar-gui/static/media/score_topTen_id.495b1ae226576840d6df.md",
     "static/media/exam_all.md": "/stellar-gui/static/media/exam_all.de9f062fdcf2710b8bf2.md",
     "main.e99256e8.css.map": "/stellar-gui/static/css/main.e99256e8.css.map",
-    "main.59590d4c.js.map": "/stellar-gui/static/js/main.59590d4c.js.map",
+    "main.a2a80972.js.map": "/stellar-gui/static/js/main.a2a80972.js.map",
     "89.e6a70f3e.chunk.js.map": "/stellar-gui/static/js/89.e6a70f3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e99256e8.css",
-    "static/js/main.59590d4c.js"
+    "static/js/main.a2a80972.js"
   ]
 }
